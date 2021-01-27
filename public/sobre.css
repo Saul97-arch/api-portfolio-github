@@ -1,17 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #0f0e17;
+}
+
+p {
+  color: #a7a9be;
+}
+
+h1, h2 {
+  color: #ff8906;
+}
+
+a {
+  color: #e53170;
+}
+
+h1 {
+  margin: 1.5rem 0;
 }
 
 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 14vh;
   width: 100%;
   background: #af9f9f;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #0f0e17;
 }
 
 .flex-container {
-  margin-top: 5%;
+  margin-top: 8%;
   display: flex;
   flex-direction: column;
   height: 80vh;
@@ -30,8 +60,9 @@ p {
 }
 
 .foto-perfil {
-  width: 300px;
-  border-radius: 50%;
+  width: 10vw;
+  border-radius: 5%;
+  margin: 2rem 0;
 }
 
 .imagem-linguagem {
