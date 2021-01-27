@@ -32,96 +32,70 @@ header {
   align-items: center;
 }
 
-#projetos div:nth-child(1) {
+.card-style-bg-html-img {
   background: url(img/html-logo.png);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-#projetos div:nth-child(2) {
-  background: url(img/c-logo.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.8;
-}
-
-#projetos div:nth-child(3) {
-  background: url(img/html-logo.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.8;
-}
-
-#projetos div:nth-child(4) {
-  background: url(img/html-logo.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.8;
-}
-
-#projetos div:nth-child(5) {
+.card-style-go-bg-img {
   background: url(img/go-logo.png);
   background-repeat: no-repeat;
   background-size: 100%;
   opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-#projetos div:nth-child(6) {
-  background: url(img/html-logo.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.8;
-}
-
-#projetos div:nth-child(7) {
-  background: url(img/html-logo.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.8;
-}
-
-#projetos div:nth-child(8) {
-  background: url(img/readme.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: #d15d5d;
-  opacity: 0.8;
-}
-
-#projetos div:nth-child(9) {
-  background: url(img/html-logo.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.8;
-}
-
-#projetos div:nth-child(10) {
+.card-style-bg-js-img {
   background: url(img/js-logo.png);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-#projetos div:nth-child(11) {
-  background: url(img/js-logo.png);
+.card-style-bg-c-img {
+  background: url(img/c-logo.webp);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-#projetos div:nth-child(12) {
-  background: url(img/html-logo.png);
+.card-style-bg-css-img {
+  background: url(img/css-logo.png);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-#projetos div:nth-child(13) {
-  background: url(img/js-logo.png);
+.card-style-bg-no-image-img {
+  background: url(img/no-image.png);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .link-clone {

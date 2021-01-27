@@ -30,6 +30,32 @@ const setaHref = (link, targ) => {
   targ.setAttribute("href", link);
 };
 
+const settaImagem = (curr, card) => {
+  /* background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 0.8; */
+  switch (curr.language) {
+    case "C":
+      card.setAttribute("class", "card-style-bg-c-img");
+      break;
+    case "HTML":
+      card.setAttribute("class", "card-style-bg-html-img");
+      break;
+    case "Go":
+      card.setAttribute("class", "card-style-go-bg-img");
+      break;
+    case "JavaScript":
+      card.setAttribute("class", "card-style-bg-js-img");
+      break;
+    case "CSS":
+      card.setAttribute("class", "card-style-bg-css-img");
+      break;
+    default:
+      card.setAttribute("class", "card-style-bg-no-image-img");
+      break;
+  }
+};
+
 const criaCards = (arr, fatherElement) => {
   return arr.map((curr) => {
     const div = document.createElement("div");
@@ -38,6 +64,8 @@ const criaCards = (arr, fatherElement) => {
     span.innerText = curr.name;
     fatherElement.appendChild(div);
     div.appendChild(span);
+    settaImagem(curr, div);
+    // Fazer imgs, e dinamizar
 
     // links da div
     const l1 = document.createElement("a");
@@ -94,7 +122,6 @@ req.open("GET", url, true);
 
 req.onload = () => {
   const res = JSON.parse(req.response);
-  console.log(res);
   getAndSaveids(res);
   criaCards(res, projetos);
   createId(maisInfo);

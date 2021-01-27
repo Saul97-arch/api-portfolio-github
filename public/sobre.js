@@ -38,32 +38,32 @@ req.onload = () => {
   const imagemLinguagem = document.createElement("img");
   switch (res[id].language) {
     case "C":
-      imagemLinguagem.setAttribute("src", "./img/c-logo.webp");
+      imagemLinguagem.setAttribute("src", "img/c-logo.webp");
       imagemLinguagem.setAttribute("class", "imagem-linguagem");
       main.appendChild(imagemLinguagem);
       break;
     case "HTML":
-      imagemLinguagem.setAttribute("src", "./img/html-logo.png");
+      imagemLinguagem.setAttribute("src", "img/html-logo.png");
       imagemLinguagem.setAttribute("class", "imagem-linguagem");
       main.appendChild(imagemLinguagem);
       break;
     case "Go":
-      imagemLinguagem.setAttribute("src", "./img/go-logo.png");
+      imagemLinguagem.setAttribute("src", "img/go-logo.png");
       imagemLinguagem.setAttribute("class", "imagem-linguagem");
       main.appendChild(imagemLinguagem);
       break;
     case "JavaScript":
-      imagemLinguagem.setAttribute("src", "./img/js-logo.png");
+      imagemLinguagem.setAttribute("src", "img/js-logo.png");
       imagemLinguagem.setAttribute("class", "imagem-linguagem");
       main.appendChild(imagemLinguagem);
       break;
     case "CSS":
-      imagemLinguagem.setAttribute("src", "./img/css-logo.png");
+      imagemLinguagem.setAttribute("src", "img/css-logo.png");
       imagemLinguagem.setAttribute("class", "imagem-linguagem");
       main.appendChild(imagemLinguagem);
       break;
     default:
-      imagemLinguagem.setAttribute("src", "./img/no-image.png");
+      imagemLinguagem.setAttribute("src", "img/no-image.png");
       imagemLinguagem.setAttribute("class", "imagem-linguagem");
       main.appendChild(imagemLinguagem);
       break;
