@@ -5,7 +5,7 @@
 }
 
 header {
-  height: 20vh;
+  height: 14vh;
   width: 100%;
   background: #af9f9f;
 }
@@ -20,24 +20,44 @@ header {
 }
 
 #id-projeto {
-    display: flex;
-    justify-content: center;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100%;
 }
 
 p {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .foto-perfil {
-    width: 300px;
-    border-radius: 50%;
+  width: 300px;
+  border-radius: 50%;
 }
 
 .imagem-linguagem {
-    width: 150px;
+  width: 150px;
 }
 
 a {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
+}
+
+.seguidores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #af9f9f;
+  border-radius: 10px;
+}
+
+.seguidores img {
+  width: 32px;
+  margin: 0 4px;
+  border-radius: 50%;
+}
+
+.seguidores div {
+  margin: 0 16px;
+  display: flex;
+  align-items: center;
 }

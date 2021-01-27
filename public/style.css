@@ -1,14 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #0f0e17;
 }
 
 header {
   height: 20vh;
   width: 100%;
-  background: #af9f9f;
+  background: #fffffe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+header h1 {
+  color: #ff8906;
+  font-size: 4rem;
+}
+
+
 
 #projetos {
   margin-top: 5%;
@@ -23,6 +39,25 @@ header {
   width: 300px;
   height: 300px;
   margin: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 1px 2px 2px 1px #f7f7f7;
+}
+
+#projetos div span {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+#projetos div a {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #d41b1b;
+  margin: 0.2rem 0;
+}
+
+div a:hover {
+  border-bottom: 2px solid #00bd6e;
 }
 
 .card {

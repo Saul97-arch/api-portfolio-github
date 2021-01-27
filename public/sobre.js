@@ -9,6 +9,7 @@ const h1 = document.createElement("h1");
 const idProjeto = document.getElementById("id-projeto");
 idProjeto.appendChild(h1);
 
+const nomeProjeto = document.querySelector(".nome-projeto");
 const main = document.querySelector(".flex-container");
 const foto = document.createElement("img");
 main.appendChild(foto);
@@ -18,8 +19,6 @@ main.appendChild(linguagem);
 
 const commit = document.createElement("a");
 main.appendChild(commit);
-
-const seguidores = document.querySelector(".seguidores");
 
 const url = "https://api.github.com/users/Saul97-arch/repos";
 
@@ -69,6 +68,8 @@ req.onload = () => {
       break;
   }
 
+  nomeProjeto.innerText = res[id].name;
+  
   foto.setAttribute(
     "src",
     "https://avatars.githubusercontent.com/u/55132010?v=4"
@@ -83,9 +84,29 @@ Requisição para pegar os seguidores, ao que parece é um JSON separado, não c
 */
 
 // Usando fetch
+const seguidores = document.querySelector(".seguidores");
+
+const renderFollowers = (res) => {
+  return res.map((follower) => {
+    const div = document.createElement("div");
+    
+    const img = document.createElement("img");
+    img.setAttribute("src", follower.avatar_url);
+    div.appendChild(img);
+    
+    const a = document.createElement("a");
+    a.innerText = follower.login;
+    a.setAttribute("href", follower.html_url);
+    a.setAttribute("target", "_blank");
+    div.appendChild(a);
+    
+    seguidores.appendChild(div);
+  });
+};
 
 fetch("https://api.github.com/users/Saul97-arch/followers")
   .then((res) => res.json())
   .then((followers) => {
     console.log(followers);
+    renderFollowers(followers);
   });

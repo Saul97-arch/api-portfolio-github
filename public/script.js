@@ -71,7 +71,7 @@ const criaCards = (arr, fatherElement) => {
     const l1 = document.createElement("a");
     l1.textContent = "LINK";
     setaHref(curr.html_url, l1);
-
+    
     const l2 = document.createElement("a");
     l2.setAttribute("class", "link-clone");
     l2.textContent = "CLONE";
