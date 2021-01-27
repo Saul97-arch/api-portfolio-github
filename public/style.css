@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 20vh;
+  width: 100%;
+  background: #af9f9f;
+}
+
+#projetos {
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+}
+
+#projetos div {
+  width: 300px;
+  height: 300px;
+  margin: 10px 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#projetos div:nth-child(1) {
+  background: url(img/html-logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+#projetos div:nth-child(2) {
+  background: url(img/c-logo.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+#projetos div:nth-child(3) {
+  background: url(img/html-logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+#projetos div:nth-child(4) {
+  background: url(img/html-logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+#projetos div:nth-child(5) {
+  background: url(img/go-logo.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 0.8;
+}
+
+#projetos div:nth-child(6) {
+  background: url(img/html-logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+#projetos div:nth-child(7) {
+  background: url(img/html-logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+#projetos div:nth-child(8) {
+  background: url(img/readme.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #d15d5d;
+  opacity: 0.8;
+}
+
+#projetos div:nth-child(9) {
+  background: url(img/html-logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+#projetos div:nth-child(10) {
+  background: url(img/js-logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+#projetos div:nth-child(11) {
+  background: url(img/js-logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+#projetos div:nth-child(12) {
+  background: url(img/html-logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+#projetos div:nth-child(13) {
+  background: url(img/js-logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.link-clone {
+  text-decoration: underline;
+  cursor: pointer;
+}
